@@ -18,7 +18,12 @@
       "sendEmailto": "info@americanaluminumfabricators.com",
       "staticFormKey": "c82c917f-e290-4053-9458-b31149857be3",
       "successUrl": "https://www.americanaluminumfabricators.com/success/",
-      "emailSubject": "Contact from - American Aluminum Fabricators"
+      "website": "Website Contact - American Aluminum Fabricators",
+      "permits": "Permits Contact - American Aluminum Fabricators",
+      "campaigns": {
+        "roof": "Campaign Roof Panels - Contact",
+        "impact": "Campaign Impact Windows - Contact"
+      }
     }
 
 }
