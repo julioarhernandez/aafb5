@@ -29,6 +29,7 @@
         {% set navPages = collections.all | eleventyNavigationBreadcrumb("Blog") %}
         {% set breadcrumbs=navPages %}
         {% set featureImage=thumbnail %}
+        {% set ctitleH1=true %}
         {% set staticPath={ url: '/posts/', text: 'Blogs', alt: 'All posts'}%}
         {% include "components/hero-inner.njk" %}
     </div>
@@ -47,7 +48,7 @@
             <h3 class="headerSubtitle -decor-hoz -medium">Also consider</h3>
             <h4 class="headerTitle -medium">Related articles</h4>
             <div class="row">
-             {%- for post in collections.post -%}
+             {%- for post in collections.post | reverse -%}
               {% if post.fileSlug !== page.fileSlug %}
                 <div class="col-12 mb-4">
                   <div class="card card-reset card-blog card-blog-related background-light-gradient-main -invert">

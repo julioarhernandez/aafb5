@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="row mt-5">
-            {%- for post in collections.post -%}
+            {%- for post in collections.post | reverse -%}
             <div class="col-12 col-md-6 mb-4">
                 <div class="card card-reset card-blog background-light-mid-gradient-main -invert">
                     <img src="{{ post.data.thumbnail }}" class="card-img-top" alt="{{post.data.title}}" loading="lazy">
