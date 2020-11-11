@@ -18,6 +18,15 @@
       }
    },
    {
+      "image": "insulated_roofs-6_min.jpeg",
+      "text": "Aluminum Insulated Roofs",
+      "link": {
+         "text": "Product details",
+         "class": "btn-link",
+         "href": "/products/insulated-roof-panels//"
+      }
+   },
+   {
       "image": "pergola.jpg",
       "text": "Aluminum Pergolas",
       "link": {
