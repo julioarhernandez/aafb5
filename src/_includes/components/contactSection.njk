@@ -77,7 +77,7 @@
                 </div>
             </div>
             <div class="col-10 col-md-6 text-center d-flex flex-column mb-5 mx-auto">
-                <form action="https://api.staticforms.xyz/submit" method="post">
+                <form action="https://formsubmit.co/info@americanaluminumfabricators.com" method="post">
                     <div class="row">
                         <div class="col-md-6 col-12">
                             <input type="text" name="name" value="" class="form-input" aria-required="true" aria-invalid="false" placeholder="Your name*" required>
@@ -89,11 +89,10 @@
                             <textarea name="message" cols="40" rows="10" class="form-text" aria-required="true" aria-invalid="false" placeholder="Your message*" required></textarea>
                         </div>
                         <div class="col-12 mt-4">
-                            <input type="text" name="honeypot" style="display:none">
-                            <input type="hidden" name="accessKey" value="{{ global.contactForm.staticFormKey}}" />
-                            <input type="hidden" name="subject" value="{{ global.contactForm.website}}" />
-                            <input type="hidden" name="replyTo" value="{{ global.contactForm.sendEmailto}}" />
-                            <input type="hidden" name="redirectTo" value="{{ global.contactForm.successUrl}}" />
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_subject" value="{{ global.contactForm.website}}" />
+                            <input type="hidden" name="_replyto" value="{{ global.contactForm.sendEmailto}}" />
+                            <input type="hidden" name="_next" value="{{ global.contactForm.successUrl}}" />
                             <input type="submit" value="Submit" class="btn btn-primary btn-no-arrow"/>
                         </div>
                     </div>

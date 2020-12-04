@@ -4,7 +4,7 @@
             <div class="col-10 col-md-8 d-flex flex-column mx-auto">
 
                 <h2 class="headerTitle -medium pb-4 -invert">Permit processing Inquiry</h2>
-                <form action="https://api.staticforms.xyz/submit" method="post" class="-invert">
+                <form action="https://formsubmit.co/info@americanaluminumfabricators.com" method="post" class="-invert">
                     <div class="row">
                         <div class="col-md-6 col-12 mb-md-3">
                             <input type="text" name="name" value="" class="form-input" aria-required="true"
@@ -61,11 +61,10 @@
                                       aria-invalid="false" placeholder="Your message*" required></textarea>
                         </div>
                         <div class="col-12 mt-4">
-                            <input type="text" name="honeypot" style="display:none">
-                            <input type="hidden" name="accessKey" value="{{ global.contactForm.staticFormKey }}" />
-                            <input type="hidden" name="subject" value="{{ global.contactForm.website }}" />
-                            <input type="hidden" name="replyTo" value="{{ global.contactForm.sendEmailto }}" />
-                            <input type="hidden" name="redirectTo" value="{{ global.contactForm.successUrl }}" />
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_subject" value="{{ global.contactForm.website }}" />
+                            <input type="hidden" name="_replyto" value="{{ global.contactForm.sendEmailto }}" />
+                            <input type="hidden" name="_next" value="{{ global.contactForm.successUrl }}" />
                             <input type="submit" value="Submit" class="btn btn-primary btn-no-arrow"/>
                         </div>
                     </div>
