@@ -1,0 +1,110 @@
+---json
+    {
+      "layout": "layouts/campaigns.njk",
+      "title": "Hurricane Accordion Shutters | American Aluminum Fabricators",
+      "permalink": "campaigns/hurricane-accordion-shutters/",
+      "description": "Accordion shutters are one or two-piece panels that collapse and fold like an accordion and glide on wheels. They are constructed of heavy-gauge, extruded aluminum or steel panels that effectively block strong winds and direct sunlight. These shutters are housed beside the windows or doors when not in use and unfold to protect during a storm. Accordion shutters are permanently installed. They require a roller-carriage system track, which they slide open and closed on. Some models can be locked with a key to reducing the chance of theft",
+      "sitemapIgnore": "true"
+    }
+---
+<div class="hero">
+    {% set ctitle= 'Accordion Hurricane Shutters installations and fabrication. Best Price guaranteed' %}
+    {% set formTitle= 'Get in touch' %}
+    {% set content='Improve your property with Accordion Hurricane Shutters, an easy an affordable solution for any residential or commercial project.'%}
+    {% set formSubtitle='Contact us to get a <br/> FREE ESTIMATE!' %}
+    {% set featureImage='/assets/images/min/insulated-roof-panels-1.jpg' %}
+    {% set featureImage2x='/assets/images/min/insulated-roof-panels-1@2x.jpg' %}
+    {% set emailSubject= global.contactForm.campaigns.accordion %}
+    {% include "components/hero-inner-campaign.njk" %}
+</div>
+  <article>
+        <!-- Section Intro -->
+        {% set class='col-10 col-md-8 d-flex flex-column mt-5 mx-auto' %}
+        {% set ctitle= 'Accordion Hurricane Shutters' %}
+        {% set subtitle='Products' %}
+        {% set body=products.content.accordions.content %}
+        {% include "components/content2.njk" %}
+        <!-- end section intro -->
+          <div class="container">
+            <div class="col-12">
+                <p class="my-5 text-center">
+                    <a href="#estimateForm" class="btn btn-no-arrow btn-primary">Get in touch with us</a>
+                </p>
+            </div>
+        </div>
+        <!-- Benefits Intro -->
+        {% set sectionClass='back-main-light py-4 mb-3' %}
+        {% set class='col-10 col-md-8 d-flex flex-column  mt-0 mx-auto' %}
+        {% set ctitle= 'Benefits of Accordion Hurricane Shutters' %}
+        {% set titleTag= 'h2' %}
+        {% set titleClass='headerTitle -medium' %}
+        {% set subtitle=null %}
+        {% set body=products.content.accordions.content2 %}
+        {% include "components/content2.njk" %}
+        <!-- end section intro -->
+{#          <div class="container">#}
+{#            <div class="col-12">#}
+{#                <p class="my-5 text-center">#}
+{#                    <a href="#estimateForm" class="btn btn-no-arrow btn-primary">Get in touch with us</a>#}
+{#                </p>#}
+{#            </div>#}
+{#        </div>#}
+         <!-- Section Intro -->
+{#        {% set sectionClass=null %}#}
+{#        {% set class='col-10 col-md-8 d-flex flex-column  mt-0 mx-auto' %}#}
+{#        {% set ctitle= 'Sizes and types of Insulated roof panels we offer' %}#}
+{#        {% set titleTag= 'h2' %}#}
+{#        {% set titleClass='headerTitle -medium' %}#}
+{#        {% set subtitle=null %}#}
+{#        {% set body=products.content.insulatedRoofs.content3 %}#}
+{#        {% include "components/content2.njk" %}#}
+        <!-- end section intro -->
+    </article>
+
+    <!-- Section Simple products -->
+    {% set items=[
+      { "src": "/assets/images/min/accordion-shutter-1.jpg"},
+      { "src": "/assets/images/min/accordion-shutter-2.jpg"},
+      { "src": "/assets/images/min/accordion-shutter-3.jpg"}
+    ] %}
+    {% set class='col-10 col-md-8 d-flex flex-column mt-5 mx-auto' %}
+    {% set ctitle= 'Accordion Hurricane Shutters projects' %}
+    {% set slides=items %}
+    {% set titleHtag = 'h2' %}
+    {% include "components/simple-carousel.njk" %}
+    <!-- end section simple products -->
+
+    <div class="container">
+        <div class="col-12">
+            <p class="my-5 text-center">
+                <a href="#estimateForm" class="btn btn-no-arrow btn-primary">Get in touch with us</a>
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Testimonial -->
+    {% include "components/testimonial.njk" %}
+
+    <!-- Event snippet for Submit lead form conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-782290617/Xmc6CMvWsuMBELmdg_UC',
+          'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+
+
+
+
+
+
