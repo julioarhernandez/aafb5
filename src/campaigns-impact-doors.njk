@@ -1,0 +1,88 @@
+---json
+   {
+     "layout": "layouts/campaigns.njk",
+     "title": "Luxury Impact Doors for Residences and Commercial Clients in Central Florida",
+     "permalink": "campaigns/luxury-impact-doors/",
+     "description": "Luxury impact doors provide the best solution to secure your home or business. They can withstand blows from flying debris, reducing the chance of an impact fracture and offering a lifetime of security and protection.",
+     "sitemapIgnore": "true",
+     "hotjar": {
+           "id": "2061994",
+           "sv": "6"
+       }
+}
+---
+<div class="hero">
+   {% set ctitle = 'Luxury Impact Doors for Residences and Commercial Clients' %}
+   {% set formTitle= 'Get in touch' %}
+   {% set content='Protecting your family and property with the highest quality products at the most competitive prices.'%}
+   {% set formSubtitle='Contact us to get a <br/> FREE ESTIMATE!' %}
+   {% set featureImage='/assets/images/min/impact-windows-doors-camp.jpg' %}
+   {% set featureImage2x='/assets/images/min/impact-windows-doors-camp@2x.jpg' %}
+   {% set emailSubject= global.contactForm.campaigns.impact %}
+   {% include "components/hero-inner-campaign.njk" %}
+</div>
+  <!-- Section Intro -->
+   {% set class='col-10 col-md-8 d-flex flex-column mt-5 mx-auto' %}
+   {% set ctitle = 'Experience Unmatched Elegance and Security with Luxury Impact Doors' %}
+   {% set subtitle='Luxury Impact Doors' %}
+   {% set body=products.content.impactDoorsCampaign.content %}
+   {% include "components/content2.njk" %}
+   <!-- end section intro -->
+
+
+   <!-- Section Simple products -->
+{#    {% set items=[#}
+{#      { "src": "/assets/images/min/impact-windows-and-doors-1.jpg"},#}
+{#      { "src": "/assets/images/min/impact-windows-and-doors-2.jpg"},#}
+{#      { "src": "/assets/images/min/impact-windows-and-doors-3.jpg"},#}
+{#      { "src": "/assets/images/min/impact-windows-and-doors-4.jpg"},#}
+{#      { "src": "/assets/images/min/impact-windows-and-doors-5.jpg"},#}
+{#      { "src": "/assets/images/min/impact-windows-and-doors-6.jpg"},#}
+{#      { "src": "/assets/images/min/impact-windows-and-doors-7.jpg"}#}
+{#    ] %}#}
+{#    {% set class='col-10 col-md-8 d-flex flex-column mt-5 mx-auto' %}#}
+{#    {% set ctitle = 'Luxury Impact Door Models' %}#}
+{#    {% set slides=items %}#}
+{#    {% set titleHtag = 'h2' %}#}
+{#    {% include "components/simple-carousel.njk" %}#}
+   <!-- end section simple products -->
+
+
+   <div class="container">
+       <div class="col-12">
+           <p class="my-5 text-center">
+               <a href="#estimateForm" class="btn btn-no-arrow btn-primary">Get in touch with us</a>
+           </p>
+       </div>
+   </div>
+
+
+   <!-- Section product gallery -->
+   {% set class='back-main-light mx-auto mt-4 py-5' %}
+   {% set ctitle = 'Luxury Impact Doors Gallery' %}
+   {% set subtitle='Gallery' %}
+   {% set gallery=products.impact.image %}
+   {% include "components/gallery.njk" %}
+   <!-- End Section product gallery -->
+
+
+   <!-- Testimonial -->
+   {% include "components/testimonial.njk" %}
+
+
+   <!-- Event snippet for Submit lead form conversion page
+   In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+   <script>
+   function gtag_report_conversion(url) {
+     var callback = function () {
+       if (typeof(url) != 'undefined') {
+         window.location = url;
+       }
+     };
+     gtag('event', 'conversion', {
+         'send_to': 'AW-782290617/Xmc6CMvWsuMBELmdg_UC',
+         'event_callback': callback
+     });
+     return false;
+   }
+ </script>
