@@ -1,0 +1,71 @@
+<div class="background-light-gradient-main">
+    <div class="headerItem header-inner">
+        <div class="headerItem_figure">
+             <picture>
+                <source srcset="{{featureImage}}" media="(max-width:500px)">
+                <source srcset="{{featureImage2x}}" media="(min-width:501px)">
+                <img src="{{featureImage}}" alt="..." loading="lazy">
+            </picture>
+        </div>
+        <div class="headerItem_content">
+            <div class="container my-5" id="estimateForm">
+                <div class="row">
+                    <div class="col-10 mx-auto col-md-5 align-self-center mb-5 mb-md-0">
+                        <div class="headerTitle mb-3 -invert">
+                            {{ctitle}}
+                        </div>
+                         <div class="headerTitle mb-3 -invert -medium -light l-h150">
+                            {{content | safe}}
+                        </div>
+                    </div>
+                    <div class="col-10 mx-auto col-md-5">
+                        <div class="subheaderTitle mb-3">
+                            <div class="row">
+
+                                <div class="cta-box bg-white">
+                                    <div class="d-flex flex-column p-5 text-center">
+                                        <div class="content-title mt-2 order-2">
+                                            <h2 class="headerTitle">{{formSubtitle | safe}}</h2>
+                                        </div>
+                                        <div class="content-subtitle order-1">
+                                            <h3 class="headerSubtitle">{{formTitle}}</h3>
+                                        </div>
+                                        <div class="bodyContent order-3 mt-2">
+                                              <div class="row">
+                                                    <div class="col-12 text-center d-flex flex-column mx-auto">
+                                                        <form action="/api" method="post" id="conversion-form">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <input type="text" name="name" id="name" value="" class="form-input" aria-required="true" aria-invalid="false" placeholder="Your name*" required>
+                                                                </div>
+                                                                <div class="col-12 mt-4">
+                                                                    <input type="text" name="email" id="email" value="" class="form-input" aria-required="true" aria-invalid="false" placeholder="Your e-mail*" required>
+                                                                </div>
+                                                                <div class="col-12 mt-4">
+                                                                    <input type="text" name="phone" id="phone" value="" class="form-input" aria-required="true" aria-invalid="false" placeholder="Your phone number*" required>
+                                                                </div>
+                                                                <div class="col-12 mt-4">
+                                                                    <input type="text" name="_honey" style="display:none">
+                                                                    <input type="hidden" name="_subject" value="{{ emailSubject }}" />
+                                                                    <input type="hidden" name="_replyto" value="{{ global.contactForm.sendEmailto}}" />
+                                                                    <input type="hidden" name="_next" value="{{ global.contactForm.successUrl}}" />
+                                                                    <input type="submit" value="Get in touch" class="btn btn-primary btn-no-arrow" id="form-submit"/>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                              </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
