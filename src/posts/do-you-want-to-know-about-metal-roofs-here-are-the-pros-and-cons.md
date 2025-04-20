@@ -1,5 +1,5 @@
 ---
-title: Do you want to know about metal roofs? Here are the pros and cons.
+title: Do you want to know about metal roofs Here are the pros and cons.
 description:  Metal roofs can be an attractive option due to their longevity, minimal maintenance, and efficiency. And you can choose from tin, zinc, aluminum, copper, or galvanized steel.
 date: 2020-10-01T16:46:57.727Z
 thumbnail: /assets/images/min/metal-roofing.jpg
