@@ -4,80 +4,54 @@
   permalink: products/insulated-roof-panels/
   date: Last Modified
   description: Insulated roof panels consist of metal panels with steel skins and an insulating foam core that adds an energy efficient layer.  They are known for their thermal properties, design flexibility and quick installation time
-  eleventyNavigation:
-    key: Insulated Roof Panels
-    parent: Products
-    order: 1
+
 ---
-<div class="hero">
-    {% set ctitle= 'Insulated Roof Panels' %}
-    {% set navPages = collections.all | eleventyNavigationBreadcrumb("Insulated Roof Panels") %}
-    {% set breadcrumbs=navPages %}
-    {% set featureImage='/assets/images/insulated-roof-panels-1.jpg' %}
-    {% include "components/hero-inner.njk" %}
-</div>
-    <article>
-        <!-- Section Intro -->
-        {% set class='col-10 col-md-8 d-flex flex-column mt-5 mx-auto' %}
-        {% set ctitle= 'Insulated Roof Panels' %}
-        {% set subtitle='Products' %}
-        {% set body=products.content.insulatedRoofs.content %}
-        {% include "components/content2.njk" %}
-        <!-- end section intro -->
-        <!-- Benefits Intro -->
-        {% set sectionClass='back-main-light py-4 mb-3' %}
-        {% set class='col-10 col-md-8 d-flex flex-column  mt-0 mx-auto' %}
-        {% set ctitle= 'Benefits of insulated roof panels' %}
-        {% set titleTag= 'h2' %}
-        {% set titleClass='headerTitle -medium' %}
-        {% set subtitle=null %}
-        {% set body=products.content.insulatedRoofs.content2 %}
-        {% include "components/content2.njk" %}
-        <!-- end section intro -->
-         <!-- Section Intro -->
-        {% set sectionClass=null %}
-        {% set class='col-10 col-md-8 d-flex flex-column  mt-0 mx-auto' %}
-        {% set ctitle= 'Sizes and types of Insulated roof panels we offer' %}
-        {% set titleTag= 'h2' %}
-        {% set titleClass='headerTitle -medium' %}
-        {% set subtitle=null %}
-        {% set body=products.content.insulatedRoofs.content3 %}
-        {% include "components/content2.njk" %}
-        <!-- end section intro -->
-    </article>
 
+<article>
+  <!-- Section Intro -->
+  {% set class='col-10 col-md-8 d-flex flex-column mt-5 mx-auto' %} {% set
+  ctitle= 'Insulated Roof Panels' %} {% set subtitle='Products' %} {% set
+  body=products.content.insulatedRoofs.content %} {% include
+  "components/content2.njk" %}
+  <!-- end section intro -->
+  <!-- Benefits Intro -->
+  {% set sectionClass='back-main-light py-4 mb-3' %} {% set class='col-10
+  col-md-8 d-flex flex-column mt-0 mx-auto' %} {% set ctitle= 'Benefits of
+  insulated roof panels' %} {% set titleTag= 'h2' %} {% set
+  titleClass='headerTitle -medium' %} {% set subtitle=null %} {% set
+  body=products.content.insulatedRoofs.content2 %} {% include
+  "components/content2.njk" %}
+  <!-- end section intro -->
+  <!-- Section Intro -->
+  {% set sectionClass=null %} {% set class='col-10 col-md-8 d-flex flex-column
+  mt-0 mx-auto' %} {% set ctitle= 'Sizes and types of Insulated roof panels we
+  offer' %} {% set titleTag= 'h2' %} {% set titleClass='headerTitle -medium' %}
+  {% set subtitle=null %} {% set body=products.content.insulatedRoofs.content3
+  %} {% include "components/content2.njk" %}
+  <!-- end section intro -->
+</article>
 
-    <!-- Section product gallery -->
-    {% set class='back-main-light mx-auto mt-4 py-5' %}
-    {% set ctitle= 'Product Gallery' %}
-    {% set subtitle='Products' %}
-    {% set gallery=products.insulatedRoofs.image %}
-    {% include "components/gallery.njk" %}  
-    <!-- End Section product gallery -->
-    
-    <!-- Section Why us -->
-    {% set ctitle= '“ Excellent Quality & Durable Products! ”' %}
-    {% set subtitle='Why Choose our products' %}
-    {% set class='pt-6' %}
-    {% set titleHtag = 'h3' %}
-    {% set subtitleHtag = 'h2' %}
-    {% include "components/whyus.njk" %}
-    <!-- End section whyus -->
+<!-- Section product gallery -->
+{% set class='back-main-light mx-auto mt-4 py-5' %} {% set ctitle= 'Product
+Gallery' %} {% set subtitle='Products' %} {% set
+gallery=products.insulatedRoofs.image %} {% include "components/gallery.njk" %}
+<!-- End Section product gallery -->
 
-      <!-- Section Financial -->
-    {% set financial=financial.financial %}
-    {% set products = financial %}
-    {% set ctitle= 'Financial Institutions' %}
-    {% set subtitle='Financing options' %}
-    {% set class='back-main-light pt-6 mt-0' %}
-    {% include "components/cardsSection.njk" %}
-    <!-- End section Financial -->
+<!-- Section Why us -->
+{% set ctitle= '“ Excellent Quality & Durable Products! ”' %} {% set
+subtitle='Why Choose our products' %} {% set class='pt-6' %} {% set titleHtag =
+'h3' %} {% set subtitleHtag = 'h2' %} {% include "components/whyus.njk" %}
+<!-- End section whyus -->
 
-    <!-- Contact section -->
-    {% set ctitle= 'Contact us' %}
-    {% set subtitle='Affordable Quality.<br> Trusted Service' %}
-    {% set showMap = true %}
-     {% include "components/contactSection.njk" %}
-    <!-- End contact section -->
+<!-- Section Financial -->
+{% set financial=financial.financial %} {% set products = financial %} {% set
+ctitle= 'Financial Institutions' %} {% set subtitle='Financing options' %} {%
+set class='back-main-light pt-6 mt-0' %} {% include
+"components/cardsSection.njk" %}
+<!-- End section Financial -->
 
-
+<!-- Contact section -->
+{% set ctitle= 'Contact us' %} {% set subtitle='Affordable Quality.<br />
+Trusted Service' %} {% set showMap = true %} {% include
+"components/contactSection.njk" %}
+<!-- End contact section -->

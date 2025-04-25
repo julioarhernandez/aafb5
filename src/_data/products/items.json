@@ -1,65 +1,20 @@
 [
-   {
-      "image": "impact.jpg",
-      "text": "Impact Windows & Doors",
-      "link": {
-         "text": "Product details",
-         "class": "btn-link",
-         "href": "/products/impact-windows-and-doors/"
-      }
-   },
-   {
-      "image": "roof.jpg",
-      "text": "Metal Roofing",
-      "link": {
-         "text": "Product details",
-         "class": "btn-link",
-         "href": "/products/metal-roofing/"
-      }
-   },
-   {
-      "image": "insulated_roofs-6_min.jpeg",
-      "text": "Insulated Roof Panels",
-      "link": {
-         "text": "Product details",
-         "class": "btn-link",
-         "href": "/products/insulated-roof-panels/"
-      }
-   },
-   {
-      "image": "pergola.jpg",
-      "text": "Aluminum Pergolas",
-      "link": {
-         "text": "Product details",
-         "class": "btn-link",
-         "href": "/products/aluminum-pergolas/"
-      }
-   },
-   {
-      "image": "accordion.jpg",
-      "text": "Accordion Hurricane Shutters",
-      "link": {
-         "text": "Product details",
-         "class": "btn-link",
-         "href": "/products/accordion-hurricane-shutters/"
-      }
-   },
-   {
-      "image": "fence.jpg",
-      "text": "Fencing and Decking",
-      "link": {
-         "text": "Product details",
-         "class": "btn-link",
-         "href": "/products/fencing-and-decking/"
-      }
-   },
-   {
-      "image": "gutter.jpg",
-      "text": "Seamless rain gutters",
-      "link": {
-         "text": "Product details",
-         "class": "btn-link",
-         "href": "/products/seamless-rain-gutters/"
-      }
-   }
+  {
+    "image": "impact.jpg",
+    "text": "Impact Windows",
+    "link": {
+      "text": "Product details",
+      "class": "btn-link",
+      "href": "/products/impact-windows-and-doors/"
+    }
+  },
+  {
+    "image": "impact.jpg",
+    "text": "Impact Doors",
+    "link": {
+      "text": "Product details",
+      "class": "btn-link",
+      "href": "/products/impact-doors/"
+    }
+  }
 ]

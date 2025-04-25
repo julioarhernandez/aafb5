@@ -1,0 +1,56 @@
+---
+  layout: layouts/inner-slick.njk
+  title: impact windows
+  permalink: products/impact-windows/
+  date: Last Modified
+  description: Impact windows are the best solution to secure your home or business, It can withstand blows from flying debris reducing the chance of an impact fracture offering a lifetime security and protection.
+  eleventyNavigation:
+    key: impact windows
+    parent: Products
+    order: 2
+---
+
+<div class="hero">
+  {% set ctitle= 'Impact windows' %} {% set navPages = collections.all |
+  eleventyNavigationBreadcrumb("impact windows") %} {% set breadcrumbs=navPages
+  %} {% set featureImage='/assets/images/min/slider1.jpg' %} {% include
+  "components/hero-inner.njk" %}
+</div>
+<!-- Section Intro -->
+{% set class='col-10 col-md-8 d-flex flex-column mt-5 mx-auto' %} {% set ctitle=
+'Impact Windows' %} {% set subtitle='Products' %} {% set
+body=products.content.impact.content %} {% include "components/content2.njk" %}
+<!-- end section intro -->
+
+<!-- Section Simple products -->
+{% set items=[ { "src": "/assets/images/min/impact-windows-and-doors-1.jpg"}, {
+"src": "/assets/images/min/impact-windows-and-doors-2.jpg"}, { "src":
+"/assets/images/min/impact-windows-and-doors-3.jpg"}, { "src":
+"/assets/images/min/impact-windows-and-doors-4.jpg"}, { "src":
+"/assets/images/min/impact-windows-and-doors-5.jpg"}, { "src":
+"/assets/images/min/impact-windows-and-doors-6.jpg"}, { "src":
+"/assets/images/min/impact-windows-and-doors-7.jpg"} ] %} {% set class='col-10
+col-md-8 d-flex flex-column mt-5 mx-auto' %} {% set ctitle= 'Impact Window &
+Door Models' %} {% set slides=items %} {% set titleHtag = 'h2' %} {% include
+"components/simple-carousel.njk" %}
+<!-- end section simple products -->
+
+<!-- Section Why us -->
+{% set ctitle= '“ Excellent Quality & Durable Products! ”' %} {% set
+subtitle='Why Choose our products' %} {% set class='pt-6' %} {% set titleHtag =
+'h3' %} {% set subtitleHtag = 'h2' %} {% include "components/whyus.njk" %}
+<!-- End section whyus -->
+
+<!-- Section Financial -->
+{% set financial=financial.financial %} {% set products = financial %} {% set
+ctitle= 'Financial Institutions' %} {% set subtitle='Financing options' %} {%
+set class='back-main-light pt-6 mt-0' %} {% include
+"components/cardsSection.njk" %}
+<!-- End section Financial -->
+
+<!-- Contact section -->
+{% set ctitle= 'Contact us' %} {% set subtitle='Affordable Quality.<br />
+Trusted Service' %} {% set showMap = true %} {% include
+"components/contactSection.njk" %}
+
+<!-- End contact section -->
